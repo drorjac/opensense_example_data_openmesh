@@ -7,7 +7,7 @@ The data will be downloaded by specific functions in `poligrain` (still to be ad
 ## Guidlines for adding data
 
 1. All data has to conform to the OpenSense data format convenctions and must be stored as NetCDF (maybe we later add some CSV examples, but this is not a priority).
-2. Each file must contain a reference to the original data source in the attributes.
+2. There must be a clear reference to the original data source either in a README next to the files or in the files e.g. in the NetCDF attributes.
 3. We create a directory for each original data source, e.g. `OpenMRG` when using the OpenMRG dataset. All files for different sensors and different covered periods should be placed there.
 4. We create individual files for the individual sensors.
 5. We provide different sizes of the same dataset by cropping to approx. 1 hour, 1 day and 1 week indicated by the file name ending e.g. `_1d.nc`.
