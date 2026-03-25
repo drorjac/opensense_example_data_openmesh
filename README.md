@@ -17,4 +17,24 @@ The data will be downloaded by specific functions in `poligrain` (still to be ad
 
 ## Available data
 
-...to be added
+### OpenMRG
+CML and gauge data from Gothenburg, Sweden, covering a summer 2015 event. Includes received
+signal level from commercial microwave links, city rain gauges, SMHI gauges, and weather radar.
+Full dataset: Andersson et al. 2022, Zenodo.
+
+### OpenRainER
+CML and gauge data from a European network, covering an 8-day period. Includes received signal
+level from commercial microwave links and rain gauge reference measurements.
+Full dataset: Zenodo (10.5281/zenodo.10593848).
+
+### AMS PWS
+Personal weather station data from Amsterdam, Netherlands. Includes rainfall and meteorological
+measurements from citizen weather stations alongside reference gauge data.
+
+### OpenMesh
+CML and PWS data from New York City, covering January 2024. Includes received signal level from
+75 commercial microwave links (NYC Mesh network) and rainfall, temperature, humidity, wind, and
+pressure from 35 Weather Underground personal weather stations. Also includes ASOS airport
+reference station data (JFK, EWR, LGA) for validation.
+The full repository with detailed fetching functions and examples is available at
+https://github.com/drorjac/OpenMesh

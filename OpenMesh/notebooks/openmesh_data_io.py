@@ -45,7 +45,7 @@ except ImportError:
 # ---------------------------------------------------------------------------
 
 DATA_DIR   = Path(__file__).parent / "data" / "jacoby_2025_OpenMesh"   # absolute — stable regardless of CWD
-SAMPLE_DIR = DATA_DIR / "samples"
+SAMPLE_DIR = Path(__file__).parent / "data" / "samples"
 CML_PATH   = DATA_DIR / "raw" / "ds_openmesh.nc"
 PWS_PATH   = DATA_DIR / "raw" / "pws_wu_os.nc"
 
@@ -167,7 +167,6 @@ def _infer_interval_label(start: datetime, end: datetime) -> str:
     if total_seconds % 3600 == 0:
         h = total_seconds // 3600
         if h % 720 == 0: return f"{h // 720}mo"
-        if h % 168 == 0: return f"{h // 168}w"
         if h % 24  == 0: return f"{h // 24}d"
         return f"{h}h"
     return f"{total_seconds // 60}min"
