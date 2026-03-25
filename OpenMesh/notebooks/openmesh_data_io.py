@@ -44,7 +44,7 @@ except ImportError:
 # Constants  (all paths relative to the notebook / script working directory)
 # ---------------------------------------------------------------------------
 
-DATA_DIR   = Path(__file__).parent / "data"   # absolute — stable regardless of CWD
+DATA_DIR   = Path(__file__).parent / "data" / "jacoby_2025_OpenMesh"   # absolute — stable regardless of CWD
 SAMPLE_DIR = DATA_DIR / "samples"
 CML_PATH   = DATA_DIR / "raw" / "ds_openmesh.nc"
 PWS_PATH   = DATA_DIR / "raw" / "pws_wu_os.nc"
